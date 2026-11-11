@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commercial Cleaning Services Calgary | Regency Cleaning Services Inc.</title>
+<meta name="description" content="Calgary-owned commercial cleaning company. Janitorial, retail, carpet and upholstery, post-construction, window, restaurant and facility cleaning from Regency Cleaning Services Inc.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1e2a78;
+  --navy-deep:#141c52;
+  --ink:#151a33;
+  --red:#e51b24;
+  --red-deep:#b8121a;
+  --green:#39b54a;
+  --paper:#f5f2ec;
+  --paper-2:#ece7de;
+  --line:rgba(21,26,51,.14);
+  --muted:#5b6078;
+  --serif:'Bodoni Moda', Georgia, serif;
+  --sans:'Instrument Sans', system-ui, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,92vw);margin-inline:auto}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--red)}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(34px,4.4vw,58px)}
+em{font-style:italic}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;padding:15px 24px;border-radius:2px;transition:.25s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-deep)}
+.btn-line{border:1px solid var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.arrow{transition:transform .25s}
+a:hover .arrow{transform:translateX(4px)}
+
+/* top bar */
+.topbar{background:var(--navy-deep);color:#c9cde6;font-size:13px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:9px 0;gap:20px}
+.topbar .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:8px;vertical-align:1px}
+.topbar .right{display:flex;gap:26px}
+.topbar a:hover{color:#fff}
+
+/* header */
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:86px}
+.logo img{height:62px;width:auto}
+nav.main ul{display:flex;gap:30px;list-style:none}
+nav.main a{font-size:14.5px;font-weight:500;position:relative;padding:6px 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--red);transition:.25s}
+nav.main a:hover::after,nav.main a.active::after{width:100%}
+.menu-btn{display:none;background:none;border:0;font-size:15px;font-weight:600;cursor:pointer}
+
+/* hero */
+.hero{padding:70px 0 0;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:60px;align-items:end}
+.hero h1{font-size:clamp(44px,6.4vw,92px);margin:22px 0 28px}
+.hero h1 em{color:var(--navy)}
+.hero h1 .r{color:var(--red)}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:560px}
+.hero .ctas{display:flex;gap:14px;margin:34px 0 46px;flex-wrap:wrap}
+.industries{display:flex;flex-wrap:wrap;gap:8px 22px;padding:22px 0 60px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.industries b{color:var(--ink);font-weight:600;margin-right:6px}
+.hero-photo{position:relative;align-self:stretch;min-height:560px}
+.hero-photo .frame{position:absolute;inset:0 0 0 0;clip-path:polygon(0 0,100% 0,100% 100%,18% 100%,0 86%);overflow:hidden}
+.hero-photo .frame img{width:100%;height:100%;object-fit:cover}
+.hero-photo .block{position:absolute;left:-28px;top:44px;width:110px;height:58%;background:var(--navy);z-index:-1}
+.hero-photo .tag{position:absolute;right:-1px;top:46px;background:#fff;padding:18px 22px;max-width:230px;border-left:4px solid var(--red);box-shadow:0 18px 40px -20px rgba(20,28,82,.4)}
+.hero-photo .tag strong{display:block;font-family:var(--serif);font-size:22px;line-height:1.1;margin-bottom:6px}
+.hero-photo .tag span{font-size:13px;color:var(--muted)}
+
+/* quote ticket */
+.ticket{background:var(--navy);color:#fff;position:relative;z-index:3}
+.ticket .wrap{display:grid;grid-template-columns:250px 1fr;gap:40px;padding:38px 0;align-items:center}
+.ticket h3{font-size:30px}
+.ticket h3 small{display:block;font-family:var(--sans);font-size:13px;color:#aab0dc;font-weight:400;margin-top:8px;letter-spacing:0}
+.ticket form{display:grid;grid-template-columns:repeat(4,1fr) auto;gap:0;border:1px solid rgba(255,255,255,.25)}
+.ticket label{display:flex;flex-direction:column;padding:12px 16px;border-right:1px solid rgba(255,255,255,.18)}
+.ticket label span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#aab0dc;margin-bottom:4px}
+.ticket input,.ticket select{background:transparent;border:0;color:#fff;font:inherit;font-size:15px;outline:none;width:100%}
+.ticket select option{color:var(--ink)}
+.ticket input::placeholder{color:rgba(255,255,255,.45)}
+.ticket button{background:var(--red);color:#fff;border:0;font:inherit;font-weight:600;padding:0 30px;cursor:pointer;transition:.25s}
+.ticket button:hover{background:var(--red-deep)}
+
+/* affiliations */
+.affil{background:#fff;border-bottom:1px solid var(--line)}
+.affil .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:50px;align-items:center;padding:34px 0}
+.affil .badges{display:flex;gap:44px;align-items:center}
+.affil .badges img{height:58px;width:auto;filter:grayscale(1);opacity:.75;transition:.3s}
+.affil .badges img:hover{filter:none;opacity:1}
+.affil p{font-size:14px;color:var(--muted);max-width:420px}
+.affil p b{color:var(--green)}
+
+/* service index */
+.svc{background:var(--ink);color:#e9eaf3;padding:120px 0;position:relative}
+.svc-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.svc .side{position:sticky;top:130px;align-self:start}
+.svc h2{color:#fff;margin:18px 0 22px}
+.svc h2 em{color:#ff5a61}
+.svc .side p{color:#a3a7c2;max-width:380px}
+.svc .side .btn{margin-top:30px}
+.svc ol{list-style:none;border-top:1px solid rgba(255,255,255,.14)}
+.svc li a{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:baseline;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.14);transition:padding .3s}
+.svc li .n{font-family:var(--serif);font-style:italic;color:#7d83ad;font-size:18px}
+.svc li h3{font-size:clamp(24px,2.4vw,32px);color:#fff;transition:color .3s}
+.svc li p{font-size:15px;color:#a3a7c2;margin-top:8px;max-width:520px;max-height:0;overflow:hidden;opacity:0;transition:.4s}
+.svc li .go{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#7d83ad;white-space:nowrap;transition:.3s}
+.svc li a:hover{padding-left:12px}
+.svc li a:hover h3{color:#ff5a61}
+.svc li a:hover p,.svc li.open p{max-height:80px;opacity:1}
+.svc li a:hover .go{color:#fff}
+.svc li .thumb{display:none}
+.preview{position:fixed;width:300px;height:190px;pointer-events:none;z-index:40;opacity:0;transform:scale(.9) rotate(-2deg);transition:opacity .25s,transform .25s;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);border:6px solid #fff}
+.preview.show{opacity:1;transform:scale(1) rotate(-2deg)}
+.preview img{width:100%;height:100%;object-fit:cover}
+
+/* program */
+.program{padding:130px 0 120px}
+.program-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.program-grid>*,.hero-grid>*,.svc-grid>*,.faq-grid>*{min-width:0}
+.stack{position:relative;height:600px}
+.stack .a{position:absolute;left:0;top:0;width:76%;height:66%;object-fit:cover;filter:brightness(1.5) contrast(1.05)}
+.stack .b{position:absolute;right:0;bottom:0;width:60%;height:52%;object-fit:cover;border:10px solid var(--paper)}
+.stack .stamp{position:absolute;left:8%;bottom:6%;background:var(--red);color:#fff;padding:22px 24px;width:220px}
+.stack .stamp b{font-family:var(--serif);font-size:24px;font-weight:500;display:block;line-height:1.1}
+.stack .stamp span{font-size:13px;opacity:.85}
+.program h2{margin:18px 0 22px}
+.program .copy>p{color:var(--muted);font-size:17px}
+.points{margin:34px 0;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.points div{padding:20px 20px 20px 0;border-bottom:1px solid var(--line)}
+.points div:nth-child(odd){border-right:1px solid var(--line)}
+.points div:nth-child(even){padding-left:22px}
+.points b{display:block;font-size:16px;margin-bottom:4px}
+.points span{font-size:14px;color:var(--muted)}
+.freq{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--ink);width:max-content;max-width:100%}
+.freq span{padding:11px 18px;font-size:14px;font-weight:600;border-right:1px solid var(--ink)}
+.freq span:last-child{border-right:0;background:var(--ink);color:#fff}
+.freq-label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+
+/* green */
+.green{position:relative;min-height:660px;display:flex;align-items:center;color:#fff;overflow:hidden}
+.green>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.green::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,40,22,.92) 0%,rgba(12,40,22,.78) 42%,rgba(12,40,22,.1) 75%);z-index:1}
+.green .wrap{position:relative;z-index:2;padding:110px 0}
+.green .eyebrow{color:#7fe08b}
+.green h2{max-width:620px;margin:18px 0 22px}
+.green .intro{max-width:520px;color:#cfe5d2;font-size:17px}
+.leed{display:grid;grid-template-columns:repeat(3,1fr);max-width:720px;margin-top:44px;border-top:1px solid rgba(255,255,255,.25)}
+.leed div{padding:22px 22px 0 0}
+.leed div+div{padding-left:22px;border-left:1px solid rgba(255,255,255,.25)}
+.leed i{font-family:var(--serif);font-size:42px;color:#7fe08b;font-style:italic;display:block;line-height:1}
+.leed b{display:block;margin:10px 0 4px}
+.leed span{font-size:14px;color:#cfe5d2}
+.disinfect{margin-top:40px;display:inline-flex;gap:16px;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);padding:16px 22px;backdrop-filter:blur(6px)}
+.disinfect img{width:46px;height:46px;border-radius:50%}
+.disinfect p{font-size:14.5px;color:#e6f3e8;max-width:420px}
+
+/* why */
+.why{padding:120px 0;background:#fff}
+.why-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px}
+.why-head h2{max-width:640px;margin-top:18px}
+.why-head p{max-width:340px;color:var(--muted)}
+.ledger{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink)}
+.ledger div{padding:30px 26px 34px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);position:relative;transition:background .3s}
+.ledger div:nth-child(4n){border-right:0}
+.ledger div:hover{background:var(--paper)}
+.ledger img{width:54px;height:54px;border-radius:50%;margin-bottom:26px}
+.ledger small{position:absolute;right:22px;top:26px;font-family:var(--serif);font-style:italic;color:#9aa0bf}
+.ledger h3{font-size:23px}
+
+/* reviews */
+.reviews{padding:120px 0;background:var(--paper)}
+.reviews-top{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:60px;align-items:end}
+.reviews-top h2{margin-top:18px}
+.reviews-top .stars{justify-self:end;text-align:right}
+.reviews-top .stars b{font-family:var(--serif);font-size:64px;font-weight:500;display:block;line-height:1;color:var(--red)}
+.reviews-top .stars span{font-size:14px;color:var(--muted)}
+.wall{columns:3;column-gap:24px}
+.wall figure{break-inside:avoid;margin-bottom:24px;background:#fff;padding:30px 30px 26px;border:1px solid var(--line)}
+.wall figure.big{background:var(--navy);color:#fff;border-color:var(--navy)}
+.wall figure.big blockquote{font-size:28px}
+.wall figure.redq{background:var(--red);color:#fff;border-color:var(--red)}
+.wall blockquote{font-family:var(--serif);font-size:21px;line-height:1.3}
+.wall figcaption{margin-top:20px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;display:flex;justify-content:space-between}
+.wall figcaption i{font-style:normal;color:var(--red);letter-spacing:2px}
+.wall figure.big figcaption i,.wall figure.redq figcaption i{color:#fff}
+
+/* vision */
+.vision{background:var(--red);color:#fff;padding:110px 0;position:relative;overflow:hidden}
+.vision::after{content:"R";position:absolute;right:-40px;bottom:-200px;font-family:var(--serif);font-style:italic;font-size:620px;line-height:1;color:rgba(255,255,255,.08)}
+.vision .wrap{display:grid;grid-template-columns:220px 1fr;gap:50px;position:relative;z-index:1}
+.vision .eyebrow{color:#ffd5d7}
+.vision p.big{font-family:var(--serif);font-size:clamp(28px,3.4vw,46px);line-height:1.18}
+.vision p.big em{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+
+/* faq */
+.faq{padding:120px 0}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+.faq .side{position:sticky;top:130px;align-self:start}
+.faq h2{margin:18px 0 22px}
+.faq .side p{color:var(--muted)}
+.callcard{margin-top:34px;background:var(--ink);color:#fff;padding:28px}
+.callcard span{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#a3a7c2}
+.callcard a{display:block;font-family:var(--serif);font-size:34px;margin:6px 0 4px}
+.callcard small{color:#a3a7c2}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:24px 0;font-size:18px;font-weight:600}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:28px;height:28px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-weight:400;transition:.3s}
+details[open] summary .pm{background:var(--red);border-color:var(--red);color:#fff;transform:rotate(45deg)}
+details p{padding:0 50px 24px 0;color:var(--muted)}
+
+/* articles */
+.articles{padding:0 0 120px}
+.articles-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:40px;border-top:2px solid var(--ink);padding-top:40px}
+.art-list a{display:grid;grid-template-columns:200px 1fr auto;gap:36px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
+.art-list img{width:200px;height:120px;object-fit:cover;filter:saturate(.85)}
+.art-list h3{font-size:clamp(20px,2vw,27px);max-width:720px;transition:color .3s}
+.art-list a:hover h3{color:var(--red)}
+.art-list .more{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;white-space:nowrap}
+
+/* footer */
+.cta{background:var(--navy);color:#fff}
+.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:40px;padding:70px 0}
+.cta h2{font-size:clamp(32px,4vw,52px);max-width:700px}
+.cta h2 em{color:#ff8a8f}
+footer{background:var(--navy-deep);color:#b6bbdc;font-size:14.5px}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:50px;padding:80px 0 60px}
+.foot .flogo{height:70px;width:auto;filter:brightness(0) invert(1);margin-bottom:22px}
+.foot h4{color:#fff;font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:20px}
+.foot ul{list-style:none;display:grid;gap:10px}
+.foot a:hover{color:#fff}
+.social{display:flex;gap:10px;margin-top:22px}
+.social a{width:40px;height:40px;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;border-radius:50%;transition:.25s}
+.social a:hover{background:var(--red);border-color:var(--red)}
+.social svg{width:16px;height:16px;fill:#fff}
+.legal{border-top:1px solid rgba(255,255,255,.12)}
+.legal .wrap{display:flex;justify-content:space-between;gap:20px;padding:24px 0;font-size:13px;flex-wrap:wrap}
+.legal a{color:#fff}
+.legal a:hover{color:#ff8a8f}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  nav.main{display:none}
+  nav.main.open{display:block;position:absolute;top:86px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:20px 4vw}
+  nav.main.open ul{flex-direction:column;gap:14px}
+  .menu-btn{display:block}
+  header.site .btn-red{display:none}
+  .hero-grid,.svc-grid,.program-grid,.faq-grid,.reviews-top{grid-template-columns:1fr}
+  .hero-photo{min-height:460px;order:-1}
+  .hero-photo .block{display:none}
+  .ticket .wrap{grid-template-columns:1fr}
+  .ticket form{grid-template-columns:1fr 1fr}
+  .ticket label{border-bottom:1px solid rgba(255,255,255,.18)}
+  .ticket button{grid-column:1/-1;padding:16px}
+  .affil .wrap{grid-template-columns:1fr;gap:20px}
+  .svc .side,.faq .side{position:static}
+  .ledger{grid-template-columns:repeat(2,1fr)}
+  .ledger div:nth-child(4n){border-right:1px solid var(--line)}
+  .ledger div:nth-child(2n){border-right:0}
+  .wall{columns:2}
+  .reviews-top .stars{justify-self:start;text-align:left}
+  .vision .wrap{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr}
+  .cta .wrap{flex-direction:column;align-items:flex-start}
+  .preview{display:none}
+  .svc li .thumb{display:block;width:100%;height:170px;object-fit:cover;margin-top:14px}
+  .svc li p{max-height:none;opacity:1}
+}
+@media (max-width:640px){
+  .topbar .left{display:none}
+  .topbar .wrap{justify-content:center}
+  .logo img{height:50px}
+  .ticket form{grid-template-columns:1fr}
+  .stack{height:440px}
+  .freq{width:auto}
+  .freq span{flex:1 1 auto;text-align:center;border-bottom:1px solid var(--ink)}
+  .points{grid-template-columns:1fr}
+  .points div:nth-child(odd){border-right:0}
+  .points div:nth-child(even){padding-left:0}
+  .leed{grid-template-columns:1fr}
+  .leed div+div{border-left:0;padding-left:0}
+  .ledger{grid-template-columns:1fr}
+  .ledger div{border-right:0!important}
+  .wall{columns:1}
+  .why-head,.articles-head{flex-direction:column;align-items:flex-start}
+  .art-list a{grid-template-columns:1fr;gap:14px}
+  .art-list img{width:100%;height:180px}
+  .foot{grid-template-columns:1fr}
+  .svc li a{grid-template-columns:40px 1fr}
+  .svc li .go{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="left"><span class="dot"></span>Calgary-owned commercial cleaning &middot; Open Monday to Sunday</div>
+    <div class="right">
+      <a href="mailto:info@regencycleaning.ca">info@regencycleaning.ca</a>
+      <a href="tel:4035207788">(403) 520-7788</a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="https://regencycleaning.ca/" class="logo"><img src="images/regency-logo.png" alt="Regency Cleaning Services Inc."></a>
+    <nav class="main" id="nav">
+      <ul>
+        <li><a class="active" href="https://regencycleaning.ca/">Home</a></li>
+        <li><a href="https://regencycleaning.ca/about-us/">About Us</a></li>
+        <li><a href="https://regencycleaning.ca/green-cleaning/">Green Cleaning</a></li>
+        <li><a href="#services">Cleaning Services</a></li>
+        <li><a href="https://regencycleaning.ca/articles/">Articles</a></li>
+        <li><a href="https://regencycleaning.ca/contact-us/">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="#quote" class="btn btn-red">Request a Quote <span class="arrow">&rarr;</span></a>
+    <button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Commercial Cleaning Services &middot; Calgary</div>
+      <h1>Founded on <em>client care</em> and professionalism<span class="r">.</span></h1>
+      <p class="lead">Regency Cleaning Services is a Calgary-owned company. Our hand-picked, green-trained crews keep offices, stores and facilities spotless on a schedule built around your business.</p>
+      <div class="ctas">
+        <a href="#quote" class="btn btn-red">Get a Free Quote <span class="arrow">&rarr;</span></a>
+        <a href="#services" class="btn btn-line">Explore Services</a>
+      </div>
+      <div class="industries"><b>Trusted by</b> Corporate offices &middot; Warehouses &middot; Healthcare clinics &middot; Retail &middot; Condominiums</div>
+    </div>
+    <div class="hero-photo">
+      <div class="block"></div>
+      <div class="frame"><img src="images/hero-retail-crew.webp" alt="Regency cleaner scrubbing a retail store aisle"></div>
+      <div class="tag"><strong>Quality assurance on every visit</strong><span>Weekly and monthly programs</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="ticket" id="quote">
+  <div class="wrap">
+    <h3>Request a quote<small>Tell us about your space. We respond quickly.</small></h3>
+    <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thank you!';">
+      <label><span>Name</span><input type="text" placeholder="Your name" required></label>
+      <label><span>Email</span><input type="email" placeholder="you@company.ca" required></label>
+      <label><span>Phone</span><input type="tel" placeholder="(403) 000-0000"></label>
+      <label><span>Service</span>
+        <select>
+          <option>Commercial / Janitorial</option>
+          <option>Green Cleaning</option>
+          <option>Retail Janitorial Services</option>
+          <option>Carpet &amp; Upholstery Cleaning</option>
+          <option>Move In / Move Out Cleaning</option>
+          <option>Recreational Facility Cleaning</option>
+          <option>Educational Facility Cleaning</option>
+          <option>Restaurant Cleaning</option>
+          <option>Window Cleaning</option>
+          <option>Post Construction Cleanup</option>
+        </select>
+      </label>
+      <button type="submit">Send Request &rarr;</button>
+    </form>
+  </div>
+</section>
+
+<section class="affil">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--muted)">Memberships</div>
+    <div class="badges">
+      <img src="images/badge-ic4.png" alt="ISSA Member">
+      <img src="images/badge-ic1.png" alt="COR Certificate of Recognition">
+      <img src="images/badge-ic2.png" alt="BBB Accredited Business">
+    </div>
+    <p><b>&#9679;</b> Green cleaning that follows LEED EBOM guidelines, from chemicals to wastewater and recycling.</p>
+  </div>
+</section>
+
+<section class="svc" id="services">
+  <div class="wrap svc-grid">
+    <div class="side rv">
+      <div class="eyebrow">Our Services</div>
+      <h2>One team for every <em>kind</em> of space.</h2>
+      <p>From daily janitorial in busy offices to a one-time polish after construction, each program is customized to your industry, facility size and hours.</p>
+      <a href="#quote" class="btn btn-red">Get a Quote <span class="arrow">&rarr;</span></a>
+    </div>
+    <ol>
+      <li><a href="https://regencycleaning.ca/commercial-cleaning-services/" data-img="images/commercial-office-cleaning.jpg"><span class="n">01</span><div><h3>Commercial &amp; Janitorial</h3><p>Office, floor and kitchen cleaning on weekly or monthly schedules, backed by a quality assurance program.</p><img class="thumb" src="images/commercial-office-cleaning.jpg" alt=""></div><span class="go">Learn more</span></a></li>
+      <li><a href="https://regencycleaning.ca/retail-cleaning-services/" data-img="images/retail-cleaning.jpg"><span class="n">02</span><div><h3>Retail Janitorial</h3><p>Scheduled cleaning for heavily trafficked stores, keeping up daily appearance and safety standards.</p><img class="thumb" src="images/retail-cleaning.jpg" alt=""></div><span class="go">Learn more</span></a></li>
+      <li><a href="https://regencycleaning.ca/" data-img="images/carpet-cleaning.jpg"><span class="n">03</span><div><h3>Carpet &amp; Upholstery</h3><p>Non-toxic, biodegradable care that refreshes fabrics and helps them last longer.</p><img class="thumb" src="images/carpet-cleaning.jpg" alt=""></div><span class="go">Learn more</span></a></li>
+      <li><a href="https://regencycleaning.ca/" data-img="images/move-in-cleaning.jpg"><span class="n">04</span><div><h3>Move In / Move Out</h3><p>For homeowners, renters and commercial tenants getting a space ready for its next occupant.</p><img class="thumb" src="images/move-in-cleaning.jpg" alt=""></div><span class="go">Learn more</span></a></li>
+      <li><a href="https://regencycleaning.ca/" data-img="images/recreational-facility-cleaning.jpg"><span class="n">05</span><div><h3>Recreational Facilities</h3><p>Daily, weekly or monthly maintenance for entertainment venues under a customized program.</p><img class="thumb" src="images/recreational-facility-cleaning.jpg" alt=""></div><span class="go">Learn more</span></a></li>
+      <li><a href="https://regencycleaning.ca/" data-img="images/educational-facility-cleaning.jpg"><span class="n">06</span><div><h3>Educational Facilities</h3><p>Deep cleaning for schools, reaching the areas in-house janitorial staff rarely have time for.</p><img class="thumb" src="images/educational-facility-cleaning.jpg" alt=""></div><span class="go">Learn more</span></a></li>
+      <li><a href="https://regencycleaning.ca/" data-img="images/restaurant-cleaning.jpg"><span class="n">07</span><div><h3>Restaurants</h3><p>Detailed cleaning of kitchens, washrooms and dining rooms for the health of staff and patrons.</p><img class="thumb" src="images/restaurant-cleaning.jpg" alt=""></div><span class="go">Learn more</span></a></li>
+      <li><a href="https://regencycleaning.ca/" data-img="images/window-cleaning.jpg"><span class="n">08</span><div><h3>Window Cleaning</h3><p>Indoor and outdoor, with truck-mounted equipment for large or hard-to-reach glass.</p><img class="thumb" src="images/window-cleaning.jpg" alt=""></div><span class="go">Learn more</span></a></li>
+      <li><a href="https://regencycleaning.ca/" data-img="images/post-construction-cleaning.jpg"><span class="n">09</span><div><h3>Post-Construction Cleanup</h3><p>A polished, move-in-ready facility for new tenants once the build or renovation wraps up.</p><img class="thumb" src="images/post-construction-cleaning.jpg" alt=""></div><span class="go">Learn more</span></a></li>
+    </ol>
+  </div>
+  <div class="preview" id="preview"><img src="images/commercial-office-cleaning.jpg" alt=""></div>
+</section>
+
+<section class="program">
+  <div class="wrap program-grid">
+    <div class="stack rv">
+      <img class="a" src="images/crew-at-work.webp" alt="Regency crew cleaning glass and carpet">
+      <img class="b" src="images/window-detail-crew.webp" alt="Cleaner wiping glass with microfibre cloth">
+      <div class="stamp"><b>Hand-picked staff</b><span>Trained in green cleaning</span></div>
+    </div>
+    <div class="copy rv">
+      <div class="eyebrow">Commercial Cleaning Programs</div>
+      <h2>Cleaning that fits <em>your</em> business hours.</h2>
+      <p>Every Regency crew member is hand-picked and trained in green cleaning. We build a program around your facility, then check the work with our quality assurance program so standards never slip.</p>
+      <div class="points">
+        <div><b>Experienced team</b><span>Many staff bring years of commercial cleaning experience.</span></div>
+        <div><b>Modern equipment</b><span>Regularly serviced, up-to-date tools on every job.</span></div>
+        <div><b>Quality control</b><span>Inspections that keep results consistent.</span></div>
+        <div><b>Service guarantee</b><span>Scheduled cleanings are not missed.</span></div>
+      </div>
+      <div class="freq-label">Choose your schedule</div>
+      <div class="freq"><span>Daily</span><span>Weekly</span><span>Bi-weekly</span><span>Monthly</span><span>Evenings &amp; weekends</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="green">
+  <img src="images/disinfecting-office.jpg" alt="Technician disinfecting an office with a backpack sprayer">
+  <div class="wrap">
+    <div class="eyebrow">Green Cleaning</div>
+    <h2>Clean spaces that are kinder to the planet.</h2>
+    <p class="intro">Regency follows LEED EBOM guidelines, using environmentally responsible, non-toxic solutions across every service.</p>
+    <div class="leed rv">
+      <div><i>i.</i><b>Green chemicals</b><span>Safer products for people and buildings.</span></div>
+      <div><i>ii.</i><b>Safe disposal</b><span>Wastewater handled the responsible way.</span></div>
+      <div><i>iii.</i><b>Recycling</b><span>Waste sorted and recycled on site.</span></div>
+    </div>
+    <div class="disinfect">
+      <img src="images/icon-disinfecting-services.webp" alt="">
+      <p><b>Disinfecting services:</b> high-touch surfaces are prioritized and sanitized on every visit.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="why-head rv">
+      <div><div class="eyebrow">Why Regency</div><h2>Eight reasons Calgary businesses stay with us.</h2></div>
+      <p>We aim to meet or exceed every client expectation, with a dependable service that grows with you.</p>
+    </div>
+    <div class="ledger rv">
+      <div><small>01</small><img src="images/icon-impeccable-work.webp" alt=""><h3>Impeccable Work</h3></div>
+      <div><small>02</small><img src="images/icon-comprehensive-service.webp" alt=""><h3>Comprehensive Service</h3></div>
+      <div><small>03</small><img src="images/icon-unparalleled-service.webp" alt=""><h3>Unparalleled Service</h3></div>
+      <div><small>04</small><img src="images/icon-fair-pricing.webp" alt=""><h3>Fair Pricing</h3></div>
+      <div><small>05</small><img src="images/icon-large-selection-of-commercial-cleaning.webp" alt=""><h3>Large Selection of Services</h3></div>
+      <div><small>06</small><img src="images/icon-customized-services.webp" alt=""><h3>Customized Services</h3></div>
+      <div><small>07</small><img src="images/icon-latest-in-cleaning-technology.webp" alt=""><h3>Latest Cleaning Technology</h3></div>
+      <div><small>08</small><img src="images/icon-disinfecting-services.webp" alt=""><h3>Disinfecting Services</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="reviews-top rv">
+      <div><div class="eyebrow">Client Reviews</div><h2>In our clients' words.</h2></div>
+      <div class="stars"><b>&#9733;&#9733;&#9733;&#9733;&#9733;</b><span>From Calgary offices, properties and households</span></div>
+    </div>
+    <div class="wall">
+      <figure class="big"><blockquote>&ldquo;Regency Cleaning is simply the best!&rdquo;</blockquote><figcaption>James K. <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i></figcaption></figure>
+      <figure><blockquote>&ldquo;Regency Cleaning has been our go-to cleaning company for years, and they continue to exceed our expectations.&rdquo;</blockquote><figcaption>Logan Z. <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i></figcaption></figure>
+      <figure><blockquote>&ldquo;Thrilled with the service provided by Regency Cleaning!&rdquo;</blockquote><figcaption>Harper M. <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i></figcaption></figure>
+      <figure><blockquote>&ldquo;Regency Cleaning Services, a commercial cleaning company, are professionals at what they do.&rdquo;</blockquote><figcaption>Mia W. <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i></figcaption></figure>
+      <figure class="redq"><blockquote>&ldquo;We've been using Regency Cleaning for our commercial properties in Calgary for several years.&rdquo;</blockquote><figcaption>Noah C. <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i></figcaption></figure>
+      <figure><blockquote>&ldquo;I have always used Regency Cleaning for both residential and commercial cleaning services.&rdquo;</blockquote><figcaption>Natalia N. <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i></figcaption></figure>
+      <figure><blockquote>&ldquo;Regency Cleaning has been a lifesaver for me and my busy household.&rdquo;</blockquote><figcaption>Isabella R. <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i></figcaption></figure>
+      <figure><blockquote>&ldquo;I wouldn't hesitate to recommend Regency Cleaning to anyone looking for top-quality cleaning services in Calgary.&rdquo;</blockquote><figcaption>Olivia J. <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="vision">
+  <div class="wrap">
+    <div class="eyebrow">Our Vision</div>
+    <p class="big rv">A flexible, dependable and expandable service, built on <em>strong relationships</em> with our customers and product partners, delivered by trained staff to the highest standards.</p>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap faq-grid">
+    <div class="side">
+      <div class="eyebrow">FAQ</div>
+      <h2>Questions, answered.</h2>
+      <p>Everything Calgary businesses usually ask before booking. Still curious? Give us a call.</p>
+      <div class="callcard">
+        <span>Talk to Regency</span>
+        <a href="tel:4035207788">(403) 520-7788</a>
+        <small>Available Monday to Sunday</small>
+      </div>
+    </div>
+    <div class="acc">
+      <details open><summary>What cleaning services do you offer in Calgary?<span class="pm">+</span></summary><p>Office cleaning, janitorial, carpet, floor and window cleaning, plus industry-specific cleaning including healthcare and hospitality.</p></details>
+      <details><summary>How experienced is your staff?<span class="pm">+</span></summary><p>Many of our team members have years of commercial cleaning experience, and every crew member is trained in green cleaning.</p></details>
+      <details><summary>Can you tailor the cleaning schedule?<span class="pm">+</span></summary><p>Yes. Cleaning can be set up daily, weekly, bi-weekly or monthly to suit your business.</p></details>
+      <details><summary>What products and equipment do you use?<span class="pm">+</span></summary><p>Environmentally friendly products and modern equipment that is serviced regularly.</p></details>
+      <details><summary>What sets Regency apart?<span class="pm">+</span></summary><p>Eco-friendly practices, trained staff, quality control, a strong customer focus and flexible scheduling.</p></details>
+      <details><summary>Can you work around our business hours?<span class="pm">+</span></summary><p>Yes. Services can be booked around your hours, including evenings and weekends.</p></details>
+      <details><summary>Which industries do you serve?<span class="pm">+</span></summary><p>Corporate offices, warehouses, healthcare clinics, retail stores, condominiums and similar facilities.</p></details>
+      <details><summary>Are your cleaning products eco-friendly?<span class="pm">+</span></summary><p>Yes. We aim to use environmentally responsible, non-toxic solutions.</p></details>
+      <details><summary>Can services be customized?<span class="pm">+</span></summary><p>Yes. Plans are tailored to your industry, facility size and business needs.</p></details>
+      <details><summary>What happens if a cleaning is missed?<span class="pm">+</span></summary><p>Our service guarantee means scheduled cleanings are not missed.</p></details>
+      <details><summary>Do you offer post-construction cleaning?<span class="pm">+</span></summary><p>Yes. We prepare spaces for occupancy or reopening after construction or renovation.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="articles">
+  <div class="wrap">
+    <div class="articles-head rv">
+      <div><div class="eyebrow">Articles</div><h2>From the Regency blog.</h2></div>
+      <a href="https://regencycleaning.ca/articles/" class="btn btn-line">All Articles <span class="arrow">&rarr;</span></a>
+    </div>
+    <div class="art-list">
+      <a href="https://regencycleaning.ca/articles/"><img src="images/article-apartment-checklist.jpg" alt=""><h3>What Should an Apartment Cleaning Checklist Include for Turnovers and Move-Ins?</h3><span class="more">Read &rarr;</span></a>
+      <a href="https://regencycleaning.ca/articles/"><img src="images/article-post-construction.jpg" alt=""><h3>What Does Post Construction Cleaning Include for Newly Completed Commercial Spaces?</h3><span class="more">Read &rarr;</span></a>
+      <a href="https://regencycleaning.ca/articles/"><img src="images/post-construction-cleaning.jpg" alt=""><h3>How to Deep Clean Laminate Floors Safely Without Damaging the Surface</h3><span class="more">Read &rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Ready for a cleaner, <em>healthier</em> workplace?</h2>
+    <a href="#quote" class="btn btn-red">Request a Quote <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <img class="flogo" src="images/regency-logo.png" alt="Regency Cleaning Services Inc.">
+      <p>Calgary-owned commercial cleaning, founded on client care and professionalism.</p>
+      <div class="social">
+        <a href="https://www.facebook.com/" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.5 3.5a2 2 0 110 4 2 2 0 010-4zM3 9h3v12H3zM9 9h3v1.7c.5-.9 1.7-1.9 3.6-1.9 3.6 0 4.4 2.2 4.4 5.2V21h-3v-6.3c0-1.5-.1-3.3-2.1-3.3s-2.4 1.6-2.4 3.2V21H9z"/></svg></a>
+        <a href="https://x.com/" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://regencycleaning.ca/about-us/">About Us</a></li>
+        <li><a href="https://regencycleaning.ca/green-cleaning/">Green Cleaning</a></li>
+        <li><a href="https://regencycleaning.ca/articles/">Articles</a></li>
+        <li><a href="https://regencycleaning.ca/contact-us/">Career Opportunities</a></li>
+        <li><a href="#quote">Request a Quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Commercial Cleaning</a></li>
+        <li><a href="#services">Retail Cleaning</a></li>
+        <li><a href="#services">Carpet &amp; Upholstery</a></li>
+        <li><a href="#services">Post-Construction</a></li>
+        <li><a href="#services">Window Cleaning</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:4035207788">(403) 520-7788</a></li>
+        <li><a href="mailto:info@regencycleaning.ca">info@regencycleaning.ca</a></li>
+        <li>Calgary, Alberta</li>
+        <li>Open Monday to Sunday</li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="wrap">
+      <span>&copy; Regency Cleaning Services Inc. All rights reserved. &middot; <a href="https://regencycleaning.ca/privacy-policy/">Privacy Policy</a></span>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// hover preview for service index
+const pv=document.getElementById('preview'),pvi=pv.querySelector('img');
+document.querySelectorAll('.svc li a').forEach(a=>{
+  a.addEventListener('mouseenter',()=>{pvi.src=a.dataset.img;pv.classList.add('show')});
+  a.addEventListener('mouseleave',()=>pv.classList.remove('show'));
+  a.addEventListener('mousemove',e=>{pv.style.left=(e.clientX+28)+'px';pv.style.top=(e.clientY-95)+'px'});
+});
+// one FAQ open at a time
+document.querySelectorAll('.acc details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.acc details').forEach(o=>{if(o!==d)o.open=false})}));
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
